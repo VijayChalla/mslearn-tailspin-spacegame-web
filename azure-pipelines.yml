@@ -16,12 +16,12 @@ variables:
 
 steps:
 - task: useDotNet@2
-  displayname: 'Use .NET SDK 5.x'
+  displayName: 'Use .NET SDK 5.x'
   inputs: 
     packageType: sdk
     version: '5.x'
 
-- task:
+- task: Npm@1
   displayName: 'Run npm install'
   inputs:
     verbose: false
